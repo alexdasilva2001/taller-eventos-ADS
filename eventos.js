@@ -1,13 +1,15 @@
 
+const contenedor = document.getElementById("miDiv");
+const boton = document.getElementById("miBoton");
 
-document.addEventListener("DOMContentLoaded", () => {
-  const botonSaludo = document.getElementById("btnSaludar");
 
-  botonSaludo.addEventListener("click", () => {
-    mostrarSaludo();
-  });
+contenedor.addEventListener("click", function() {
+  alert("Se hizo clic en el contenedor");
 });
 
-function mostrarSaludo() {
-  alert("¡holaaa! ");
-}
+
+boton.addEventListener("click", function(event) {
+ 
+  event.stopPropagation();
+  alert("Se hizo clic solo en el botón");
+});
