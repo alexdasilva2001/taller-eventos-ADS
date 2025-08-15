@@ -2,30 +2,30 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de Saludo</title>
+  <title>Taller de Eventos</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 100px;
+    #contenedor {
+      padding: 5px;
+      background-color: green;
+      display: inline-block;
+      border-radius: 8px;
     }
+
     button {
       padding: 10px 20px;
       font-size: 16px;
-      background-color: #2651FF;
-      color: white;
+      background-color: white;
       border: none;
-      border-radius: 8px;
+      border-radius: 4px;
       cursor: pointer;
-    }
-    button:hover {
-      background-color: #1e3fcc;
     }
   </style>
 </head>
 <body>
-  <h1>¡Bienvenido!</h1>
-  <button onclick="alert('¡Hola!')">Saludar</button>
+  <div id="contenedor">
+    <button id="btnSaludar">Saludar</button>
+  </div>
+
+  <script src="eventos.js"></script>
 </body>
 </html>
